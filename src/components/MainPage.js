@@ -110,8 +110,7 @@ const MainPage = (props) => {
                         </Button>
                     </Box>
                     :
-                    'Game Over !'
-                    }
+                        <Typography className={classes.boardText}>Game Over !!!</Typography>                    }
                 {currentNumber && 
                 <Box>
                     <Box className={classes.number}>
