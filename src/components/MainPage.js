@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import {
     Box,
     Button,
@@ -69,6 +69,11 @@ const useStyles = makeStyles((theme) => ({
         fontSize: 32,
         fontWeight: 'bold',
     },
+    boardText: {
+        textAlign: 'center',
+        fontSize: 14,
+        fontWeight: 'bold',
+    },
 }));
 const MainPage = (props) => {
     const classes = useStyles();
@@ -79,22 +84,16 @@ const MainPage = (props) => {
     const generateNumber = () => {
         let number =  Math.floor(Math.random() * MAX) + 1;
         return (calledOutNumber.includes(number)) ?
-        generateNumber() : number;
+                        generateNumber() : number;
     }
     const handleClick = () => {
-        let num;
-        // setTimeout(function(){
-            num = generateNumber()
-        // }, 500);
-        // let prenum = currentNumber;
+        let num = generateNumber()
         setPreviousNumber(currentNumber)
         setCurrentNumber(num);
         let selectedNumbers = [...calledOutNumber]
         selectedNumbers.push(num)
         setCalledOutNumber(selectedNumbers);
-        
     }
-
     const handleResetClick = () => {
         setCurrentNumber('')
         setPreviousNumber('')
@@ -120,8 +119,8 @@ const MainPage = (props) => {
                     </Box>
                 </Box>}
                 <Box>
-                {previousNumber &&
-                    <Box className={classes.lastNum}> Last number: {previousNumber}
+                    {previousNumber &&
+                        <Box className={classes.lastNum}> Last number: {previousNumber}
                     </Box>}
                 </Box>
                 <Box>
@@ -133,6 +132,7 @@ const MainPage = (props) => {
 
             </Box>
             <Box className={classes.wrapper}>
+                <Typography className={classes.boardText}>Board</Typography>
                 <NumberCard currentNumber={currentNumber} calledOutNumber={calledOutNumber}/>
             </Box>
         </Box>

@@ -56,14 +56,14 @@ const NumberCard = (props) => {
 
     return (
         <Box display="flex" flexWrap='wrap'>
-        {allNumbers.map((numberRow, index) => (
-            <Box>
-                {numberRow.map((number, index) => (
-                    <Box border="2px solid black">
-                    <Chip
-                    size={"large"}
-                    label={number}
-                    className={ calledOutNumber.includes(number) ? ( number === currentNumber ? classes.currentNumber : classes.selectedNumber) : classes.nonSelectedNumber}/>
+        {allNumbers.map((numberRow, index1) => (
+            <Box key={index1}>
+                {numberRow.map((number, index2) => (
+                    <Box key={number} border="2px solid black">
+                        <Chip
+                        size={"medium"}
+                        label={number}
+                        className={ calledOutNumber.includes(number) ? ( number === currentNumber ? classes.currentNumber : classes.selectedNumber) : classes.nonSelectedNumber}/>
                     </Box>
                 ))}
             </Box>

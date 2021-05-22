@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: 12,
         color: '#fff',
         padding: 5,
-        backgroundColor: 'blue',
+        backgroundColor: '#0080ff',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',

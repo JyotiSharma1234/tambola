@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: 32,
         fontWeight: 'bold',
         textTransform: 'uppercase',
-        marginBottom: 20,
+        marginBottom: 10,
         position: 'relative',
         color: '#fff',
         height: 100,
