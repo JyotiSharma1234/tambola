@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/tambola/static/css/main.4ae25800.chunk.css",
+    "main.js": "/tambola/static/js/main.aa41aec0.chunk.js",
+    "main.js.map": "/tambola/static/js/main.aa41aec0.chunk.js.map",
+    "runtime-main.js": "/tambola/static/js/runtime-main.c597a80a.js",
+    "runtime-main.js.map": "/tambola/static/js/runtime-main.c597a80a.js.map",
+    "static/js/2.0fbc82e1.chunk.js": "/tambola/static/js/2.0fbc82e1.chunk.js",
+    "static/js/2.0fbc82e1.chunk.js.map": "/tambola/static/js/2.0fbc82e1.chunk.js.map",
+    "static/js/3.03adbf24.chunk.js": "/tambola/static/js/3.03adbf24.chunk.js",
+    "static/js/3.03adbf24.chunk.js.map": "/tambola/static/js/3.03adbf24.chunk.js.map",
+    "index.html": "/tambola/index.html",
+    "static/css/main.4ae25800.chunk.css.map": "/tambola/static/css/main.4ae25800.chunk.css.map",
+    "static/js/2.0fbc82e1.chunk.js.LICENSE.txt": "/tambola/static/js/2.0fbc82e1.chunk.js.LICENSE.txt",
+    "static/media/number_ball.44402f7d.png": "/tambola/static/media/number_ball.44402f7d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c597a80a.js",
+    "static/js/2.0fbc82e1.chunk.js",
+    "static/css/main.4ae25800.chunk.css",
+    "static/js/main.aa41aec0.chunk.js"
+  ]
+}
